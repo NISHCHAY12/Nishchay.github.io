@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(17, 20, 18, 0.9);
+    background-image: linear-gradient(to right, rgba(0, 129, 146, 0.381), rgba(110, 0, 165, 0.479));
+    
+    font-family: 'Zeyada' , cursive;
+}
+
+p{
+    font-size: x-large;
+}
+
+/* -----------------------Navbar---------------------------- */
+
+.navbar{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: relative;
+}
+
+#name-tag{
+    padding: 1vh;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height: 15vh;
+    width: 18vh;
+}
+
+#name{
+    font-size: 2rem;
+}
+
+#lists{
+    font-size: 1.4rem;
+    display: flex;
+    list-style: none;
+}
+
+#lists li{
+    margin-inline: 4vh;
+}
+
+#lists a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#lists a:hover{
+    color: rgb(242, 190, 255);
+}
+
+.drop{
+    position: relative;
+    display: inline-block;
+}
+
+.drop_content{
+    scale: 0;
+    position: absolute;
+    z-index: 1;
+    min-width: 20vh;
+    background-color: rgba(85, 0, 102, 0.91);
+    box-shadow: 0px 8px 5px 5px rgba(0, 183, 255, .01);
+    border: 1px solid rgba(0, 187, 255, 0.137);
+    border-radius: 1vh;
+}
+
+.drop_content a{
+    display: block;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.drop_content a:hover{
+    background-color: rgba(0, 57, 71, 0.186);
+}
+
+.social_drop:hover+.drop_content ,.drop_content:hover{
+    scale: 1;
+}
+
+.fa{
+    font-size: medium;
+    margin-right: 1vh;
+}
+/* --------------------anonymous----------------- */
+
+#main_page{
+    padding-inline: 8%;
+    overflow: hidden;
+}
+
+/* ---------------------------------Landing-heading-------------------------- */
+
+#hello{
+    padding-top: 8%;
+    padding-left: 15%;
+    display: flex;
+}
+
+#intro{
+    color: white;
+    font-size: 2.4rem;
+    margin-right: 10vh;
+    background: linear-gradient(to right, rgb(162, 0, 255) , rgb(0, 225, 255) );
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+}
+
+#my_img{
+    width: 35vh;
+    height: 35vh;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 1vh;
+}
+
+
+/* ---------------------------------landing-info-------------------- */
+
+#landing-info{
+    padding-left: 15%;
+    color: white;
+    font-size: 1.4rem;
+    top: -14vh;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* -------------------------------------next-button------------------- */
+
+#next{
+    height: 10vh;
+    width: 15vh;
+    background: rgba(39, 0, 51, 0);
+    border: 1px solid rgba(0, 33, 42, 0.51);
+    border-radius: 2vh;
+    border-top-right-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+    top: -40vh;
+    right: -170vh;
+    position: relative;
+    color: white;
+    font-family: 'Zeyada' , cursive;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: large;
+}
+
+/* --------------------------animations-------------------------- */
+
+.animateup{
+    animation-duration: 0.7s;
+    animation-name: up;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+.animatedown{
+    animation-duration: 0.7s;
+    animation-name: down;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes up{
+    0%{
+        margin-top: 0vh;
+    }
+    30%{
+        margin-top: 5vh;
+    }
+    100%{
+        margin-top: -200vh;
+    }
+}
+
+@keyframes down{
+    0%{
+        margin-top: -200vh;
+    }
+    100%{
+        margin-top: 0vh;
+    }
+}
+
+.animate-proj{
+    animation-duration: 0.7s;
+    animation-name: come-up;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+.animate-proj-rev{
+    animation-duration: 0.7s;
+    animation-name: come-down;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes come-up{
+    0%{
+        margin-left: 150vh;
+    }
+    70%{
+        margin-left: -5vh;
+    }
+    100%{
+        margin-left: 0vh;
+    }
+}
+
+@keyframes come-down{
+    0%{
+        margin-left: 0vh;
+    }
+    30%{
+        margin-left: -5vh;
+    }
+    100%{
+        margin-left: 180vh;
+    }
+}
+
+
+/* ---------------------sidebar------------------------- */
+
+#proj{
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding-left: 10%;
+}
+
+#side-bar{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#side button{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#side button:hover{
+    color: rgb(191, 0, 255);
+}
+
+#side{
+    display: flex;
+    width: 25%;
+}
+
+#sep{
+    width: 0.1vh;
+    height: 70vh;
+    background-color: white;
+    margin-block: 5vh;
+    margin-inline: 5vh;
+    border-radius: 1vh;
+}
+/* ------------------------------block----------------------------- */
+
+#block{
+    height: 81vh;
+    max-width: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    margin-left: 0;
+}
+
+#block::-webkit-scrollbar {
+    width: 1.5vh;
+  }
+  
+#block::-webkit-scrollbar-thumb {
+    background: rgba(0, 234, 255, 0.132); 
+    border-radius:1vh;
+  }
+
+#block::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+/* -------------------------------------project 1(card)--------------------------- */
+#project1{
+    display: block;
+}
+
+#card-project{
+    color: white;
+    padding-inline: 5vh;
+    display: block;
+}
+
+#card-img{
+    width: 120vh;
+    box-shadow: 0px 0px 10px 4px rgba(138, 0, 173, 0.159);
+    border-radius: 1vh;
+}
+
+#card-project a{
+    font-size: large;
+    text-decoration: none;
+    color: rgba(0, 132, 255, 0.911);
+}
+
+/* -----------------------------------project 2(gallery)-------------------------- */
+#project2{
+    display: none;
+}
+
+#gallery-project{
+    color: white;
+    padding-inline: 5vh;
+    display: block;
+}
+
+#gallery-img{
+    width: 120vh;
+    box-shadow: 0px 0px 10px 4px rgba(138, 0, 173, 0.159);
+    border-radius: 1vh;
+}
+
+#gallery-project a{
+    font-size: large;
+    text-decoration: none;
+    color: rgba(0, 132, 255, 0.911);
+}
