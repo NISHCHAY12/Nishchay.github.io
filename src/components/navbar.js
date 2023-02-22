@@ -22,6 +22,12 @@ export default function navbar(){
                     </div>
                 </li>
             </ul>
+
+            <div onClick={burg} id="burger">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
         </nav>
     )
 }
@@ -42,4 +48,23 @@ function project_rev(){
     x.style.display = "block";
     },600);
     
+}
+var c = 0;
+function burg(){
+    if(c === 0)
+    {
+        document.getElementById("lists").style.left = "-5vh";
+        document.getElementById("main_page").style.filter = "brightness(60%)";
+        document.getElementById("proj").style.filter = "brightness(60%)";
+        document.getElementById("burger").style.border = "2px solid #cc00ff"
+        c++;
+    }
+    else
+    {
+        document.getElementById("main_page").style.filter = "brightness(100%)";
+        document.getElementById("proj").style.filter = "brightness(100%)";
+        document.getElementById("lists").style.left = "-25vh";
+        document.getElementById("burger").style.border = "2px solid #ffffff"
+        c = 0;
+    }
 }
