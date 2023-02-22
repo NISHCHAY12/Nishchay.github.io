@@ -351,3 +351,135 @@ p{
     text-decoration: none;
     color: rgba(0, 132, 255, 0.911);
 }
+
+
+
+
+
+@media screen and (max-width:450px) {
+    .navbar{
+        height: 5vh;
+        width: 100%;
+        align-items: center;
+        position: relative;
+    }
+    
+    #name-tag{
+        padding-block: 1vh;
+        color: rgb(255, 255, 255);
+        justify-content:center;
+        align-items: center;
+        scale: 0.5;
+        overflow: hidden;
+    }
+    
+    #logo{
+        height: 15vh;
+        width: 18vh;
+    }
+    
+    #name{
+        font-size: 2rem;
+    }
+
+    #burger{
+        border: 1px solid #ffffff;
+        width: 3.5vh;
+        position: absolute;
+        cursor: pointer;
+        display: block;
+    }
+
+    #burger p{
+        height: 2px;
+        width: 2vh;
+        background-color: white;
+        margin-block: 4px;
+        margin-inline: auto;
+    }
+    
+    #lists{
+        display: block;
+        font-size: 1.4rem;
+        list-style: none;
+        height:95vh;
+        left: -25vh;
+        position: absolute;
+        top: 2.3vh;
+        background-color: rgb(17, 70, 82);
+        padding-top: 2vh;
+        transition: 0.4s;
+        overflow: hidden;
+    }
+    
+    .drop_content{
+        scale: 0;
+        position: absolute;
+        z-index: 1;
+        min-width: 20vh;
+        background-color: rgba(17, 70, 82, 0);
+        left: -5vh;
+        transition: 0.2s;
+    }
+
+    #hello{
+        padding-top: 2%;
+        padding-left: 5%;
+        display: block;
+    }
+    
+    #intro{
+        color: white;
+        font-size: 2rem;
+        margin-right: 0vh;
+        background: linear-gradient(to right, rgb(162, 0, 255) , rgb(0, 225, 255) );
+        -webkit-text-fill-color: transparent;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+    }
+    
+    #landing-info{
+        padding-left: 5%;
+        color: white;
+        font-size: 1.35rem;
+        top: 0vh;
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #next{
+        border-top-right-radius: 0vh;
+        border-bottom-left-radius: 50vh;
+        border-bottom-right-radius: 50vh;
+        top: 0vh;
+        margin-top: 5vh;
+        right: -30%;
+    }
+
+    #side{display: none;}
+
+    #proj{
+        padding-left: 0%;
+    }
+
+    #project1{
+        display: block;
+        margin-bottom: 5vh;
+    }
+
+    #project1 img{
+        width: 100%;
+        border-radius: 0vh;
+    }
+
+    #project2{
+        display: block;
+        margin-bottom: 5vh;
+    }
+
+    #project2 img{
+        width: 100%;
+        border-radius: 0vh;
+    }
+}
