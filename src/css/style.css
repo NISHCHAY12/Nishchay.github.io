@@ -6,15 +6,16 @@ body{
     margin: 0;
     background-color: rgba(17, 20, 18, 0.9);
     background-image: linear-gradient(to right, rgba(0, 129, 146, 0.381), rgba(110, 0, 165, 0.479));
-    font-family: 'Zeyada' , cursive;
+    /* font-family: 'Zeyada' , cursive; */
+    font-family: 'Inter', sans-serif;
 }
 
 p{
-    font-size: x-large;
+    font-size: medium;
 }
 
 /* -----------------------Navbar---------------------------- */
-
+ 
 .navbar{
     height: 15vh;
     width: 100%;
@@ -33,6 +34,7 @@ p{
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
+    font-family: 'Zeyada' , cursive;
 }
 
 #logo{
@@ -45,7 +47,7 @@ p{
 }
 
 #lists{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     display: flex;
     list-style: none;
 }
@@ -115,6 +117,7 @@ p{
     padding-top: 8%;
     padding-left: 15%;
     display: flex;
+    font-family: 'Zeyada' , cursive;
 }
 
 #intro{
@@ -140,7 +143,7 @@ p{
 #landing-info{
     padding-left: 15%;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     top: -14vh;
     position: relative;
     margin-bottom: 0;
@@ -267,9 +270,9 @@ p{
     border: none;
     background: none;
     text-align: left;
-    font-family: 'Shantell Sans', cursive;
     font-weight: 300;
     cursor: pointer;
+    margin-block: 1vh;
 }
 
 #side button:hover{
@@ -330,6 +333,7 @@ p{
 
 #card-project a{
     font-size: large;
+    font-family: 'Zeyada' , cursive;
     text-decoration: none;
     color: rgba(0, 132, 255, 0.911);
 }
@@ -353,6 +357,7 @@ p{
 
 #gallery-project a{
     font-size: large;
+    font-family: 'Zeyada' , cursive;
     text-decoration: none;
     color: rgba(0, 132, 255, 0.911);
 }
@@ -366,6 +371,10 @@ p{
 
 
 @media screen and (max-width:450px) {
+    #block::-webkit-scrollbar {
+        display: none;
+    }
+
     .navbar{
         height: 8vh;
         width: 100%;
@@ -414,7 +423,7 @@ p{
         height:95vh;
         left: -25vh;
         position: absolute;
-        top: 2.3vh;
+        top: 5.4vh;
         background-color: rgb(17, 70, 82);
         padding-top: 2vh;
         transition: 0.4s;
@@ -490,6 +499,24 @@ p{
     #project2 img{
         width: 100%;
         border-radius: 0vh;
+    }
+
+    @keyframes come-up{
+        0%{
+            margin-top: 150vh;
+        }
+        100%{
+            margin-top: 0vh;
+        }
+    }
+
+    @keyframes come-down{
+        0%{
+            margin-top: 0vh;
+        }
+        100%{
+            margin-top: 150vh;
+        }
     }
 }
 

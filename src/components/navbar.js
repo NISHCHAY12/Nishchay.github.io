@@ -11,7 +11,7 @@ export default function navbar(){
 
             <ul id="lists">
                 <li><a onClick={project_rev} href="#home">Home <i className="fa fa-home"/></a></li>
-                <li><a href="mailto:nishchaysingh13579@gmail.com">E-mail <i className="fa fa-envelope"/></a></li>
+                <li><a href="mailto:nishchaysingh13579@gmail.com">e-mail <i className="fa fa-envelope"/></a></li>
                 <li className="drop">
                     <a className="social_drop" href="#social_links">Social <i className="fa fa-caret-down"/></a>
                     <div className="drop_content">
