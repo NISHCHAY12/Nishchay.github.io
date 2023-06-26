@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Nishchay.github.io/static/css/main.b5c4bb47.css",
+    "main.css": "/Nishchay.github.io/static/css/main.4dfca5c0.css",
     "main.js": "/Nishchay.github.io/static/js/main.6e1fe3d5.js",
     "static/media/gallery.png": "/Nishchay.github.io/static/media/gallery.1c4d8c92ea08926e1745.png",
     "static/media/myself.jpg": "/Nishchay.github.io/static/media/myself.4f8c4f083d0f5e88e1e6.jpg",
     "static/media/card.png": "/Nishchay.github.io/static/media/card.146506ac9cbcaf30bf40.png",
     "static/media/logo.png": "/Nishchay.github.io/static/media/logo.fcd8dd48e3d22c4745d5.png",
     "index.html": "/Nishchay.github.io/index.html",
-    "main.b5c4bb47.css.map": "/Nishchay.github.io/static/css/main.b5c4bb47.css.map",
+    "main.4dfca5c0.css.map": "/Nishchay.github.io/static/css/main.4dfca5c0.css.map",
     "main.6e1fe3d5.js.map": "/Nishchay.github.io/static/js/main.6e1fe3d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5c4bb47.css",
+    "static/css/main.4dfca5c0.css",
     "static/js/main.6e1fe3d5.js"
   ]
 }
